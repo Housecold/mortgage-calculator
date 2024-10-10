@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# React Mortgage Calculator App 🏡
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview 🚀
 
-## Available Scripts
+This project is a **React-based mortgage calculator** that allows users to estimate their monthly mortgage payments by entering parameters like loan amount, interest rate, and loan term. It provides a simple and intuitive user interface, offering real-time updates to mortgage calculations as users adjust their inputs. The application is fully developed using React.js, focusing on the **frontend** with no backend or API integration.
 
-In the project directory, you can run:
+## Technologies Used 🛠️
 
-### `npm start`
+- **React.js**: For building the user interface and handling component state.
+- **Material-UI (MUI)**: A popular React UI framework for implementing responsive and customizable components.
+- **HTML5**: To structure the app’s content.
+- **JavaScript (ES6)**: For logic and interactivity in the calculator.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure 🗂️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project follows a clean, organized structure for easy maintenance and scalability:
 
-### `npm test`
+/ (Root Directory)
+│
+├── node_modules/                   # Node modules folder containing project's dependencies
+│
+├── public/                         # Public folder containing static files
+│
+├── src/                            # Source directory
+│   ├── components/                 # Reusable React components
+│   │   └── common/                 # Common components for the calculator
+│   │       ├── Navbar.js           # Navigation bar
+│   │       ├── Result.js           # Displays calculated mortgage results
+│   │       ├── SliderSelect.js     # Input slider for loan values
+│   │       ├── TenureSelect.js     # Dropdown for selecting mortgage tenure
+│   │       └── SliderComponent.js  # General slider component for inputs
+│   │
+│   ├── App.js                      # Main React component for the app
+│   ├── index.js                    # Entry point for React
+│   ├── reportWebVitals.js          # Tool to measure performance (not implemented)
+│   ├── setupTests.js               # Testing setup (not implemented)
+│   └── theme.js                    # Custom theming or style variables
+│
+├── .gitignore                      # Files to be ignored by Git
+├── package.json                    # Project dependencies and scripts
+├── package-lock.json               # Lock file for dependency tree consistency
+└── README.md                       # Project documentation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Development Workflow 🔄
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Component Development**: Create reusable components for the mortgage calculator, such as sliders, input fields, and results display.
+2. **State Management**: Use React's `useState` to manage user inputs and dynamically calculate mortgage payments.
+3. **Styling**: Apply libraries like Material-UI to style the app and ensure responsiveness.
+4. **Performance Monitoring**: Optionally, use the `reportWebVitals` utility to measure the app's performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup Instructions 📝
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this React project on your local machine, follow these steps:
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone git@github.com:Housecold/mortgage-calculator.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install the dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npx create-react-app .
+   npm install @mui/material @emotion/react @emotion/styled
+   npm install --save chart.js react-chartjs-2
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Start the development server:
+   
+   ```bash
+   npm start
 
-## Learn More
+4. After this, the app should automatically open in your browser at `http://localhost:3000` or whatever root you configured.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Suggested Future Improvements 💡
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Amortization Table**: Add a feature to display a full amortization schedule, breaking down principal and interest for each payment.
+2. **Unit Testing**: Implement unit tests using React Testing Library to ensure the reliability of the components and logic.
+3. **Performance Monitoring**: Integrate real-time performance tracking by fully utilizing the `reportWebVitals.js` file, allowing for better insights into the app's performance and optimizing metrics like load time and interactivity.
 
-### Code Splitting
+## Contributors 👥
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Daniel Magalhães - [@Housecold](https://github.com/Housecold)
