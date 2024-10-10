@@ -15,6 +15,7 @@ This project is a **React-based mortgage calculator** that allows users to estim
 
 The project follows a clean, organized structure for easy maintenance and scalability:
 
+```
 / (Root Directory)
 │
 ├── node_modules/                   # Node modules folder containing project's dependencies
@@ -40,7 +41,7 @@ The project follows a clean, organized structure for easy maintenance and scalab
 ├── package.json                    # Project dependencies and scripts
 ├── package-lock.json               # Lock file for dependency tree consistency
 └── README.md                       # Project documentation
-
+```
 
 ## Development Workflow 🔄
 
